@@ -34,6 +34,73 @@ def hut():
         print('yes(1)           no(2)')
         welcome()
 
+def yesdog2():
+    print('you shake the dog again')
+    print('he wakes up')
+    print('he bites you because you woke him up')
+    print('')
+    ded('ded', 3)
+    print ('welcome back to my game do you wnat to play again?')
+    print('yes(1)           no(2)')
+    welcome()
+
+def yesdog():
+    print('you shake the dog once')
+    print('he doesnt move')
+    print('do you shake him again?')
+    print('yes(1)           no(2)')
+    try:
+        choice = int(input('Your Answer: '))
+        if choice < 1.1:
+            print("")
+            print(yesdog2())
+        else:
+            print("")
+            print(nodog())
+    except ValueError:
+        print("")
+        print('Thats not an option')
+
+def nodog():
+    print('there is nothing here maybe there is somthing upstairs')
+    print('do you want to go upstair or try and wake up the dog?')
+    print('upstairs(1)          wake the dog(2)')
+    try:
+        choice = int(input('Your Answer: '))
+        if choice < 1.1:
+            print("")
+            print(upstairs())
+        else:
+            print("")
+            print(yesdog())
+    except ValueError:
+        print("")
+        print('Thats not an option')
+    
+    
+    
+
+def lookdown():
+    print('When you look around some more you see a hall way')
+    print('you go through the hall way you see a mangy dog')
+    print('he has a collar, his name is Atticus')
+    print('he isnt moving')
+    print('')
+    print('he might be dead')
+    print('do you try to wake up the dog?')
+    print ('yes(1)          no(2)')
+    try:
+        choice = int(input('Your Answer: '))
+        if choice < 1.1:
+            print("")
+            print(yesdog())
+        else:
+            print("")
+            print(nodog())
+    except ValueError:
+        print("")
+        print('Thats not an option')
+
 def downstairs():
     print('when you get to the basement you see a big metal vault with blood stains on it')
     print('there is a keyhole in order to open it')
@@ -43,7 +110,7 @@ def downstairs():
         choice = int(input('Your Answer: '))
         if choice < 1.1:
             print("")
-            print('option 1')
+            print(lookdown())
         else:
             print("")
             print(upstairs())
@@ -150,7 +217,6 @@ def start2():
         print("")
         print('Thats not an option')
 
-
 '''
     print ('before you go to the scream there is a flashlight')
     print('do you take it?')
@@ -231,6 +297,3 @@ print('Yes(1)            No(2)')
 welcome()
 print("")
 # the welcome screen
-
-
-
