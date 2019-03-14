@@ -1,8 +1,10 @@
+'''
 # My text based game for my Final Project
 # Kaden Seeger
-
-
+3.14.19
+'''
 name = input('What is your name: ')
+# This will be used later
 def housekey():
     print('do you go upstairs or downstairs')
     print('upstairs(1)          downstairs(2)')
@@ -17,11 +19,15 @@ def housekey():
     except ValueError:
         print("")
         print('Thats not an option')
+# When you have the key it aks you if you are going to upstairs or downstairs
 
 def ded(word, num):
-    for i in range(num):
-        print('')
-        print(word)
+    while True:
+        for i in range(num):
+            print('')
+            print(word)
+        break
+# The Dead screen
 
 def hut():
     for i in range(1):
@@ -33,8 +39,10 @@ def hut():
         print('welcome back to my game do you wnat to play again?')
         print('yes(1)           no(2)')
         welcome()
+# When you go in the hut he kills you
 
 def yesdog2():
+
     print('you shake the dog again')
     print('he wakes up')
     print('he bites you because you woke him up')
@@ -43,6 +51,7 @@ def yesdog2():
     print ('welcome back to my game do you wnat to play again?')
     print('yes(1)           no(2)')
     welcome()
+# after you shake the dog twice it kills you
 
 def yesdog():
     print('you shake the dog once')
@@ -60,6 +69,7 @@ def yesdog():
     except ValueError:
         print("")
         print('Thats not an option')
+# You shake the dog and he doesnt move so you can try again
 
 def nodog():
     print('there is nothing here maybe there is somthing upstairs')
@@ -76,6 +86,7 @@ def nodog():
     except ValueError:
         print("")
         print('Thats not an option')
+# if you say no to the dog you have the option to wake him upi agian
     
     
     
@@ -100,6 +111,8 @@ def lookdown():
     except ValueError:
         print("")
         print('Thats not an option')
+# When look around downstairs and you find a dog
+
 
 def downstairs():
     print('when you get to the basement you see a big metal vault with blood stains on it')
@@ -117,6 +130,7 @@ def downstairs():
     except ValueError:
         print("")
         print('Thats not an option')
+# Before you get the key and you go downstairs
 
 def upkeeplooking():
     print('when you look closer there is a chain with a key in it next to the chair ')
@@ -124,7 +138,7 @@ def upkeeplooking():
     print('')
     print('you go down stairs')
     housekey()
-
+# This is the way to get the key upstairs
 
 def downkey():
     print ('now that you have the key you try to put the key in the hole')
@@ -137,6 +151,7 @@ def downkey():
     print('welcome back to my game do you want to play again?')
     print('yes(1)           no(2)')
     welcome()
+# after you have the key and go downstairs
 
 
 def upstairs():
@@ -155,6 +170,7 @@ def upstairs():
     except ValueError:
         print("")
         print('Thats not an option')
+# The upstairs
 
 def house():
     print('when you go inside it looks like no one has been in there for ages, then there is loud bainging coming from the downstairs')
@@ -172,6 +188,7 @@ def house():
     except ValueError:
         print("")
         print('Thats not an option')
+# When you go inside the house
 
 
 def dark():
@@ -191,6 +208,7 @@ def dark():
     except ValueError:
         print("")
         print('Thats not an option')
+# the decision to go to the house or the dark figure
 
 
 def nobuddy():
@@ -198,6 +216,7 @@ def nobuddy():
     print('you decide to go towards the scream because it could be his girlfriend')
     print('')
     start1()
+# If you decide to say no for going towards the scream to your friend
 
 
 def start2():
@@ -216,6 +235,7 @@ def start2():
     except ValueError:
         print("")
         print('Thats not an option')
+#If you go to the friend
 
 '''
     print ('before you go to the scream there is a flashlight')
@@ -235,6 +255,7 @@ def start2():
         
         
 waiting to figure out how to put this in my code
+
 '''
 
 
@@ -255,6 +276,7 @@ def start1():
     except ValueError:
         print("")
         print('Thats not an option')
+# When you go to the scream
 
 
 def start():
@@ -276,6 +298,7 @@ def start():
         print("")
         print('Thats not an option')
         start2()
+# the begining
 
 
 def welcome():
